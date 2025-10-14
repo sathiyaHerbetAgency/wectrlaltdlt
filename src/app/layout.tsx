@@ -20,9 +20,9 @@ const rajdhani = Rajdhani({
   weight: ["300", "400", "500", "600", "700"],
 })
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
-  generator: "v0.app",
+  title: "WECTRLALTDLT",
+  description: "",
+  generator: "",
 }
 
 export default function RootLayout({
