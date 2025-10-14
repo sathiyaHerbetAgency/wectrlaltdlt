@@ -143,3 +143,74 @@
   background: #022F87;
   background: radial-gradient(circle, rgba(2, 47, 135, 1) 0%, rgba(9, 14, 25, 1) 100%);
 }
+
+.bg-faq{
+   background-image: url("/images/faq/faq-hero.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #000000; */
+  opacity: 0.9;
+  @media screen and (max-width: 768px) {
+      background-image: url("/BG/hero-mob-bg.webp");
+      background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+ background-color: #000000;
+}
+}
+
+.bg-faq-content{
+   background-image: url("/images/faq/faq-content-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #000000; */
+  opacity: 0.9;
+
+}
+
+.bg-cta-button{
+  background-image:url("/images/button/button-bg.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+
+.section-bg {
+  /* 1️⃣ Corner images first (top layer) */
+  background-image: 
+    url("/BG/left-bg.png"),   /* left corner */
+    url("/BG/right-bg.png"),  /* right corner */
+    url("/BG/section-bg.webp"); /* main background */
+
+  /* 2️⃣ Control position for each */
+  background-position: 
+    left bottom,   /* left corner image */
+    right bottom,  /* right corner image */
+    center;        /* main bg */
+
+  /* 3️⃣ Control size for each */
+  background-size: 
+    auto,          /* left image natural size */
+    auto,          /* right image natural size */
+    cover;         /* main bg fills section */
+
+  /* 4️⃣ Repeat behavior */
+  background-repeat: 
+    no-repeat, 
+    no-repeat, 
+    no-repeat;
+}
+
+
+
+.bg-lineup{
+   background-image: url("/images/lineup/lineup-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #000000; */
+
+}

@@ -125,7 +125,7 @@ export default function LineupSlider({
 
   return (
     <section
-      className={`relative w-full ${className}`}
+      className={`relative w-full ${className} `}
       aria-label="Artist lineup slider"
       onMouseEnter={() => {
         isHovering.current = true;
@@ -139,7 +139,7 @@ export default function LineupSlider({
       {/* Viewport */}
       <div
         ref={viewportRef}
-        className="snap-x snap-mandatory overflow-x-auto scroll-smooth [-ms-overflow-style:'none'] [scrollbar-width:'none'] [&::-webkit-scrollbar]:hidden"
+        className="snap-x snap-mandatory overflow-x-auto scroll-smooth  [-ms-overflow-style:'none'] [scrollbar-width:'none'] [&::-webkit-scrollbar]:hidden"
         onPointerDown={() => {
           isPointerDown.current = true;
           disableAuto();
@@ -148,7 +148,7 @@ export default function LineupSlider({
         onPointerCancel={() => (isPointerDown.current = false)}
       >
         {/* Track */}
-        <div className="flex gap-6 px-4 md:px-6">
+        <div className="flex gap-6 px-4 md:px-6 min-h-[420px]">
           {SLIDES.map((s, i) => {
             const active = i === centerIndex;
             return (
@@ -202,7 +202,7 @@ export default function LineupSlider({
         })}
       </div>
 
-      <div className="mt-4 flex items-center justify-end px-4 md:px-6">
+      {/* <div className="mt-4 flex items-center justify-end px-4 md:px-6">
         <button
           type="button"
           aria-label="Next slide"
@@ -217,7 +217,7 @@ export default function LineupSlider({
         >
           Next
         </button>
-      </div>
+      </div> */}
     </section>
   );
 }

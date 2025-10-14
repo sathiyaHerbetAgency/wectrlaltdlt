@@ -15,9 +15,9 @@ export function Navbar({ classname }: { classname?: string }) {
 
   return (
     <header
-      className={cn("sticky top-0 z-40 w-full border-b border-border/40 bg-background/80 backdrop-blur", classname)}
+      className={cn("sticky top-0 z-40 w-full bg-navbar ", classname)}
     >
-      <div className="mx-auto flex h-14 w-full items-center justify-items-center bg-black self-center  px-4">
+      <div className="mx-auto flex h-14 w-full items-center justify-items-center self-center  px-4">
 <div className="flex items-center justify-center w-full gap-6">
           {/* Left links (desktop) */}
           <div>

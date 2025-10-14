@@ -7,24 +7,27 @@ import VVIP from "@/components/VVIP"
 
 
 import SiteFooter from "@/components/site-footer"
+import {TextContainer} from '@/components/textContainer/text-container';
 
 export default function Page() {
   return (
     <main>
       <Navbar classname="bg-navbar" />
       <Hero />
-      <section id="lineup" className="w-full bg-black py-16">
+      <TextContainer />
+      <section id="lineup" className="w-full bg-black bg-lineup py-16">
         <div className="mx-auto max-w-7xl px-4">
-          <h2 className="mb-8 px-4 text-center text-balance text-2xl font-semibold text-white md:text-3xl">
-            Official Lineup
-          </h2>
+          <div className="flex justify-center">
+            <img src="/images/lineup/lineup-text.png" alt="FAQ banner"    className="object-contain" />
+          </div>
         </div>
-
-        <LineupSlider className="w-full" />
+        <LineupSlider className="w-full pt-8" />
       </section>
+      <section className="section-bg">
         <TicketPricing />
         <EventLayout />
-     <VVIP />
+        <VVIP />
+     </section>
       <SiteFooter />
     </main>
   )

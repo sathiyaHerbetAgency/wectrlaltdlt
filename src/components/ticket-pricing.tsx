@@ -7,32 +7,33 @@ export default function TicketPricing() {
       key: "ga-left",
       src: "/images/tickets/ticket-1.png",
       alt: "General Admission card",
-      ctas: [{ href: "#ticketmelon", label: "Purchase via Ticketmelon" }],
+      ctas: [{ href: "#ticketmelon", label: "Purchase via Ticketmelon", color:'#0101FA', border:'#0101FA', size:"grow-1", textColor:'#fff' }],
     },
     {
       key: "ga-middle",
       src: "/images/tickets/ticket-2.png",
       alt: "General Admission + Add Ons card",
-      ctas: [{ href: "#tixr", label: "Purchase via Tixr" }],
+      ctas: [{ href: "#tixr", label: "Purchase via Tixr", color:'#00FFFF' , border:'#0101FA', size:"grow-1", textColor:'#000' }],
     },
     {
       key: "sp-right",
       src: "/images/tickets/ticket-3.png",
       alt: "Stage Pass card",
       ctas: [
-        { href: "#ticketmelon", label: "Purchase via Ticketmelon" },
-        { href: "#tixr", label: "Purchase via Tixr" },
+        { href: "#ticketmelon", label: "Purchase via Ticketmelon", color:'#7000FF', border:'#0101FA', size:"grow-0 w-2/5" , textColor:'#fff' },
+        { href: "#tixr", label: "Purchase via Tixr", color:'#000', border:'#7000FF', size:"grow-0 w-2/5", textColor:'#fff' },
       ],
     },
   ]
 
   return (
-    <section className="bg-black text-foreground">
+    <section className=" text-foreground">
       <div className="mx-auto max-w-6xl px-6 py-16">
-        <header className="text-center">
-          <h2 className="text-balance text-3xl md:text-5xl font-extrabold tracking-wide uppercase">Ticket Pricing</h2>
-          <p className="mt-3 text-muted-foreground">Choose your access. Add-ons available where shown.</p>
-        </header>
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="flex justify-center">
+            <img src="/images/tickets/ticket-text.png" alt="FAQ banner"    className="object-contain" />
+          </div>
+        </div>
 
         {/* Cards: mobile stacks one-by-one; desktop shows three columns */}
         <div className="mt-10 grid gap-8 md:grid-cols-3">
@@ -45,7 +46,13 @@ export default function TicketPricing() {
               />
               <div className="mt-4 flex flex-wrap items-center gap-3">
                 {card.ctas.map((cta) => (
-                  <Button asChild key={cta.label} className="grow md:grow-0">
+                  <Button asChild key={cta.label}
+                   className={`grow md:${cta.size} text-normal font-[inter] text-center whitespace-normal px-6 font-bold border py-6 rounded-md text-white hover:scale-105 transition-transform`}
+                   style={{
+                            backgroundColor: cta.color,
+                            borderColor: cta.border,
+                            color: cta.textColor,
+                          }}>
                     <Link href={cta.href}>{cta.label}</Link>
                   </Button>
                 ))}
@@ -57,6 +64,12 @@ export default function TicketPricing() {
         {/* SR-only: desktop reference image kept for QA */}
         <div className="sr-only">
           <img src="/images/tickets/ticket-pricing-reference.png" alt="Reference layout for ticket pricing" />
+        </div>
+      </div>
+      <div className="mx-auto max-w-7xl px-4">
+        <div className="flex justify-center gap-4 items-center">
+          <p className="text-center uppercase text-sm text-[#fff] font-bold font-[Rajdhani]">Buy now pay later (via TicketMelon)</p>  
+          <img src="/images/tickets/payment-img.png" alt="FAQ banner"    className="w-[140px] " />
         </div>
       </div>
     </section>

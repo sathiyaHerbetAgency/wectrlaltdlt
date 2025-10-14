@@ -40,8 +40,8 @@ export function Countdown({ target }: Props) {
         <Digit value={pad2(minutes)} />
       </div>
 
-      <div className="mt-2 grid grid-cols-3 gap-6 font-[inter] text-[10px] tracking-[0.22em] text-white uppercase md:text-xs">
-        <span className="text-center mr-8">DAYS</span>
+      <div className="mt-2 md:w-[600px] grid grid-cols-3 gap-6 font-[inter] font-medium text-[10px] tracking-[0.22em] text-white uppercase md:text-[16px]">
+        <span className="text-center ">DAYS</span>
         <span className="text-center">HOURS</span>
         <span className="text-center">MINUTES</span>
       </div>
@@ -51,7 +51,7 @@ export function Countdown({ target }: Props) {
 
 function Digit({ value }: { value: string }) {
   return (
-    <span className="font-extrabold font-[inter] text-white text-5xl md:text-7xl leading-none tabular-nums">{value}</span>
+    <span className="font-extrabold font-[inter] text-white text-5xl md:text-[104px] leading-none tabular-nums">{value}</span>
   )
 }
 
