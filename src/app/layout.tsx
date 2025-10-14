@@ -21,8 +21,8 @@ const rajdhani = Rajdhani({
 })
 export const metadata: Metadata = {
   title: "WECTRLALTDLT",
-  description: "",
-  generator: "",
+  description: "WECTRLALTDLT",
+  generator: "WECTRLALTDLT",
 }
 
 export default function RootLayout({
