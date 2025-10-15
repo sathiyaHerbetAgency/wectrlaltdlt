@@ -5,19 +5,19 @@ export default function TicketPricing() {
   const cards = [
     {
       key: "ga-left",
-      src: "/images/tickets/ticket-1.png",
+      src: "/images/tickets/ticket-1.webp",
       alt: "General Admission card",
       ctas: [{ href: "#ticketmelon", label: "Purchase via Ticketmelon", color:'#0101FA', border:'#0101FA', size:"grow-1", textColor:'#fff' }],
     },
     {
       key: "ga-middle",
-      src: "/images/tickets/ticket-2.png",
+      src: "/images/tickets/ticket-2.webp",
       alt: "General Admission + Add Ons card",
       ctas: [{ href: "#tixr", label: "Purchase via Tixr", color:'#00FFFF' , border:'#0101FA', size:"grow-1", textColor:'#000' }],
     },
     {
       key: "sp-right",
-      src: "/images/tickets/ticket-3.png",
+      src: "/images/tickets/ticket-3.webp",
       alt: "Stage Pass card",
       ctas: [
         { href: "#ticketmelon", label: "Purchase via Ticketmelon", color:'#7000FF', border:'#0101FA', size:"grow-0 w-2/5" , textColor:'#fff' },
@@ -31,7 +31,7 @@ export default function TicketPricing() {
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex justify-center">
-            <img src="/images/tickets/ticket-text.png" alt="FAQ banner"    className="object-contain" />
+            <img src="/images/tickets/ticket-text.png" alt="FAQ banner"    className="object-contain w-lg pb-3" />
           </div>
         </div>
 
@@ -67,7 +67,7 @@ export default function TicketPricing() {
         </div>
       </div>
       <div className="mx-auto max-w-7xl px-4">
-        <div className="flex justify-center gap-4 items-center">
+        <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-4 items-center">
           <p className="text-center uppercase text-sm text-[#fff] font-bold font-[Rajdhani]">Buy now pay later (via TicketMelon)</p>  
           <img src="/images/tickets/payment-img.png" alt="FAQ banner"    className="w-[140px] " />
         </div>

@@ -19,7 +19,7 @@ export function Logo({ className }: LogoProps) {
       )}
     >
       <img src="./logo.png" alt="CTRL ALT DLT" className="w-50" />
-      {/* <img src="./mob-logo.png" alt="CTRL ALT DLT" className="w-50 md:hidden " /> */}
+      {/* <img src="./mob-logo.webp" alt="CTRL ALT DLT" className="w-50 md:hidden " /> */}
     </Link>
   );
 }

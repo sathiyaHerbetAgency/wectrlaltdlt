@@ -5,9 +5,9 @@ import React from "react";
 type Slide = { src: string; alt: string };
 
 const BASE: Slide[] = [
-  { src: "/images/lineup/klang.png", alt: "Klangkuenstler" },
-  { src: "/images/lineup/lilly.png", alt: "Lilly Palmer" },
-  { src: "/images/lineup/ben.png", alt: "Ben Hemsley" },
+  { src: "/images/lineup/KLANG.webp", alt: "Klangkuenstler" },
+  { src: "/images/lineup/LILLY.webp", alt: "Lilly Palmer" },
+  { src: "/images/lineup/BEN.webp", alt: "Ben Hemsley" },
 ];
 
 // Duplicate to 9 slides
@@ -161,7 +161,8 @@ export default function LineupSlider({
                     "transition-all duration-300 ease-out",
                     "w-64 sm:w-72 md:w-64 lg:w-72 xl:w-80",
                     active
-                      ? "scale-110 drop-shadow-[0_0_24px_rgba(0,170,255,0.55)]"
+                      // ? "scale-110 drop-shadow-[0_0_24px_rgba(0,170,255,0.55)]"
+                      ? "scale-110 "
                       : "scale-95 opacity-90",
                   ].join(" ")}
                 >

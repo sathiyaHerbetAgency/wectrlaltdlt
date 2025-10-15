@@ -18,7 +18,7 @@ export default function Page() {
       <section id="lineup" className="w-full bg-black bg-lineup py-16">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex justify-center">
-            <img src="/images/lineup/lineup-text.png" alt="FAQ banner"    className="object-contain" />
+            <img src="/images/lineup/lineup-text.webp" alt="FAQ banner"    className="object-contain w-lg" />
           </div>
         </div>
         <LineupSlider className="w-full pt-8" />

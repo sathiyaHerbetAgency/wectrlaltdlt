@@ -3,10 +3,20 @@ import { Countdown } from "./countdown"
 import { CTAButtons } from "./cta-buttons"
 
 export function Hero() {
-  const target = new Date(Date.now() + 6 * 24 * 60 * 60 * 1000)
-
+const target = new Date(2025, 11, 31, 12, 0, 0);
   return (
     <section className="relative isolate overflow-hidden bg-hero-background text-hero-foreground">
+     {/* <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/BG/hero-desktop-bg.webp"
+        src="/BG/hero-bg.mp4"
+      />
+
+  <div class="absolute inset-0 bg-black/40"></div> */}
       {/* Background image swaps for mobile/desktop */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
        

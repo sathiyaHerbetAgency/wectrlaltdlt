@@ -8,7 +8,7 @@ export default function EventLayout() {
     <section className=" text-foreground">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <header className="text-center flex justify-center mb-6">
-                   <img src="/images/Event/EventText.png" alt="Event Layout Map" />
+                   <img src="/images/Event/EventText.webp" className="w-lg pb-3" alt="Event Layout Map" />
 
         </header>
 
@@ -17,7 +17,7 @@ export default function EventLayout() {
 
         {/* SR-only: desktop reference image kept for QA */}
         <div className="">
-          <img src="/images/Event/Eventlayout.png" alt="Event Layout Map" />
+          <img src="/images/Event/Eventlayout.webp" alt="Event Layout Map" />
         </div>
       </div>
       <div className="mx-auto max-w-7xl px-4">
