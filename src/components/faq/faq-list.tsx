@@ -23,7 +23,7 @@ const ticketing: FaqItem[] = [
         <p className="italic">*Ticket prices exclude ticketing fees and booking charges.</p>
         <div>
           <div className="font-normal">VVIP SOFA</div>
-          <div>Call +601XXX to reserve your spot.</div>
+          <div>Reserve your spot at info@ctrlaltdlt.com</div>
         </div>
       </div>
     ),
@@ -70,7 +70,7 @@ const eventDetails: FaqItem[] = [
   },
    {
     q: "Is this a seated event?",
-    a: "CTRL ALT DLT is a standing event. VVIP Sofas will be available for those who purchase the package via +601XXX",
+    a: "CTRL ALT DLT is a standing event. VVIP Sofas will be available for those who reserve the package via info@ctrlaltdlt.com",
   },
   {
     q: "What is the lineup and timetable?",

@@ -8,10 +8,13 @@ const BASE: Slide[] = [
   { src: "/images/lineup/KLANG.webp", alt: "Klangkuenstler" },
   { src: "/images/lineup/LILLY.webp", alt: "Lilly Palmer" },
   { src: "/images/lineup/BEN.webp", alt: "Ben Hemsley" },
+  { src: "/images/lineup/MATHAME.webp", alt: "Mathame" },
+  { src: "/images/lineup/KEY4050.webp", alt: "BKey 4050" },
+
 ];
 
 // Duplicate to 9 slides
-const SLIDES: Slide[] = Array.from({ length: 9 }, (_, i) => BASE[i % BASE.length]);
+const SLIDES: Slide[] = Array.from({ length: 5 }, (_, i) => BASE[i % BASE.length]);
 
 export default function LineupSlider({
   className = "",
