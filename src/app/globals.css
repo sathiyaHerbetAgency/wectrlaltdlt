@@ -129,11 +129,12 @@
   /* background-color: #000000; */
   opacity: 0.9;
   @media screen and (max-width: 768px) {
-      background-image: url("/BG/hero-mob-bg.webp");
-      background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
- background-color: #000000;
+background-image:
+      linear-gradient(to bottom, #000 0%, #000 40%, transparent 100%),
+      url("/BG/hero-mob-bg.webp");      background-size: contain;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-color: #000;
   }
 
 
@@ -152,12 +153,12 @@
   /* background-color: #000000; */
   opacity: 0.9;
   @media screen and (max-width: 768px) {
-      background-image: url("/BG/hero-mob-bg.webp");
-      background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
- background-color: #000000;
-}
+   background-image: url("/images/faq/faq-hero-mob.png");
+      background-size: cover;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-color: #000000;
+  }
 }
 
 .bg-faq-content{

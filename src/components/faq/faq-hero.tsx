@@ -14,7 +14,7 @@ export default function FaqHero() {
         {/* <h1 className="font-sans text-balance text-2xl md:text-4xl font-semibold tracking-tight text-foreground">
           Frequently Asked Questions
         </h1> */}
-                <img src="/images/faq/faq-title.webp" alt="FAQ banner"    className="object-contain" />
+                <img src="/images/faq/faq-title.webp" alt="FAQ banner"    className=" w-[70%] md:w-xl" />
 
       </div>
     </header>
