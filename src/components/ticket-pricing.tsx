@@ -60,7 +60,6 @@ export default function TicketPricing() {
             </article>
           ))}
         </div>
-
         {/* SR-only: desktop reference image kept for QA */}
         <div className="sr-only">
           <img src="/images/tickets/ticket-pricing-reference.png" alt="Reference layout for ticket pricing" />
@@ -69,7 +68,7 @@ export default function TicketPricing() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-4 items-center">
           <p className="text-center uppercase text-sm text-[#fff] font-bold font-[Rajdhani]">Buy now pay later (via TicketMelon)</p>  
-          <img src="/images/tickets/payment-img.png" alt="FAQ banner"    className="w-[140px] " />
+          <img src="/images/tickets/payment-img.png" alt="FAQ banner"    className="w-[140px] md:w-[240px] " />
         </div>
       </div>
     </section>
