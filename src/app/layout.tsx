@@ -20,7 +20,7 @@ const rajdhani = Rajdhani({
   weight: ["300", "400", "500", "600", "700"],
 })
 export const metadata: Metadata = {
-  title: "WECTRLALTDLT",
+  title: "WE CTRL ALT DLT",
   description: "WECTRLALTDLT",
   generator: "WECTRLALTDLT",
 }
