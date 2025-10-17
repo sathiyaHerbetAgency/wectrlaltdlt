@@ -1,6 +1,5 @@
 import type React from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Link } from 'next/link';
 
 type FaqItem = { q: string; a: React.ReactNode }
 
