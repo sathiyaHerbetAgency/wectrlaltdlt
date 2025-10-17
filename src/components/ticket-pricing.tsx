@@ -69,11 +69,13 @@ export default function TicketPricing() {
           <img src="/images/tickets/ticket-pricing-reference.png" alt="Reference layout for ticket pricing" />
         </div>
       </div>
-      <div className="mx-auto max-w-7xl px-4">
+      <div className="mx-auto max-w-7xl px-4 flex flex-col justify-center gap-4 items-center">
         <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-4 items-center">
           <p className="text-center uppercase text-sm text-[#fff] font-bold font-[Rajdhani]">Buy now pay later (via TicketMelon)</p>  
           <img src="/images/tickets/payment-img.png" alt="FAQ banner"    className="w-[140px] md:w-[240px] " />
         </div>
+        <p className="italic text-center uppercase text-[12px] self-center md:text-[15px] text-[#fff] font-medium font-[Rajdhani] max-w-5xl">
+           Disclaimer : Ticket Price Excludes Ticket Fee & Booking Charges</p>  
       </div>
     </section>
   )

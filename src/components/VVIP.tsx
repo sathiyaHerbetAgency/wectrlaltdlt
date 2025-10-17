@@ -22,16 +22,16 @@ export default function VVIP() {
       </div>
         <div className="mx-auto max-w-7xl px-4">
         <div className="flex flex-col justify-center gap-4 items-center">
-           <Link
+           {/* <Link
       href={"#packages"}
       className="neon-button uppercasae inline-flex text-white items-center justify-center px-4 py-2 md:px-6 md:py-2.5
                  text-[11px] md:text-sm font-[inter] font-semibold bg-cta-button w-[150px]"
       aria-label={"VVIP Packages"}
     >
       Packages
-    </Link>
+    </Link> */}
           <p className="text-center uppercase text-[12px] md:text-[15px] text-[#fff] font-medium font-[Rajdhani] max-w-5xl">
-            Disclaimer : ticket Price Excludes Ticket Fee & Booking Charges</p>  
+           For VVIP sofa inquiry, kindly email to info@wectrlaltdlt.com</p>  
         </div>
       </div>
     </section>
