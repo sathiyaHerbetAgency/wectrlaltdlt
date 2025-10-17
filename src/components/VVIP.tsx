@@ -33,6 +33,11 @@ export default function VVIP() {
           <p className="text-center uppercase text-[12px] md:text-[15px] text-[#fff] font-medium font-[Rajdhani] max-w-5xl">
            For VVIP sofa inquiry, kindly email to info@wectrlaltdlt.com</p>  
         </div>
+        <div className="mx-auto max-w-7xl px-4">
+          <div className="flex justify-center">
+            <img src="/images/VVIP/Logoline_CAD.png" alt="Logo Line"    className="object-contain  md:w-lg" />
+          </div>
+        </div>
       </div>
     </section>
   )

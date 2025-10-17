@@ -7,8 +7,8 @@ type Slide = { src: string; alt: string }
 const BASE: Slide[] = [
   { src: "/images/lineup/KLANG.webp", alt: "Klangkuenstler" },
   { src: "/images/lineup/LILLY.webp", alt: "Lilly Palmer" },
-  { src: "/images/lineup/BEN.webp", alt: "Ben Hemsley" },
   { src: "/images/lineup/MATHAME.webp", alt: "Mathame" },
+  { src: "/images/lineup/BEN.webp", alt: "Ben Hemsley" },
   // { src: "/images/lineup/KEY4050.webp", alt: "BKey 4050" },
   { src: "/images/lineup/CURZON.webp", alt: "Curzon" },
   { src: "/images/lineup/DIRTY SIGNAL.webp", alt: "DIRTY SIGNAL" },

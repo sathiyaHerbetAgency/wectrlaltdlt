@@ -7,8 +7,8 @@ const target = new Date(2025, 11, 31, 12, 0, 0);
   return (
     <section className="relative  isolate overflow-hidden min-h-[94vh] md:min-h-auto bg-hero-background text-hero-foreground">
      <video
-        className="absolute hidden md:block  h-full w-full    // 👈 mobile
-           md:object-cover md:object-center // 👈 desktop " 
+        className="absolute  md:block  h-full w-full    // 👈 mobile
+           object-cover md:object-center object-right // 👈 desktop " 
         autoPlay
         muted
         loop
