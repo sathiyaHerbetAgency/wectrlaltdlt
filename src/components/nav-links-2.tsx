@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils"
 const links = [
  
   { href: "faq", label: "FAQ" },
-  { href: "#tickets", label: "Tickets" },
+  { href: "/#tickets", label: "Tickets" },
 ]
 
 export function NavLinks2({ className }: { className?: string }) {

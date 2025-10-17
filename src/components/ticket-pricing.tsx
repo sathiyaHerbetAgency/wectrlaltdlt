@@ -7,7 +7,11 @@ export default function TicketPricing() {
       key: "ga-left",
       src: "/images/tickets/ticket-1.webp",
       alt: "General Admission card",
-      ctas: [{ href: "#ticketmelon", label: "Purchase via Ticketmelon", color:'#0101FA', border:'#0101FA', size:"grow-1", textColor:'#fff' }],
+      ctas: [
+        { href: "#ticketmelon", label: "Purchase via Ticketmelon", color:'#0101FA', border:'#0101FA', size:"grow-0 w-2/5", textColor:'#fff' },
+        { href: "#tixr", label: "Purchase via Tixr", color:'#000', border:'#0101FA', size:"grow-0 w-2/5", textColor:'#fff' },
+      ]
+      ,
     },
     // {
     //   key: "ga-middle",
@@ -21,13 +25,13 @@ export default function TicketPricing() {
       alt: "Stage Pass card",
       ctas: [
         { href: "#ticketmelon", label: "Purchase via Ticketmelon", color:'#7000FF', border:'#0101FA', size:"grow-0 w-2/5" , textColor:'#fff' },
-        { href: "#tixr", label: "Purchase via Tixr", color:'#000', border:'#7000FF', size:"grow-0 w-2/5", textColor:'#fff' },
+        // { href: "#tixr", label: "Purchase via Tixr", color:'#000', border:'#7000FF', size:"grow-0 w-2/5", textColor:'#fff' },
       ],
     },
   ]
 
   return (
-    <section className=" text-foreground">
+    <section id="tickets" className=" text-foreground">
       <div className="mx-auto max-w-6xl px-6 py-16 flex flex-col">
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex justify-center">

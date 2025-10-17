@@ -23,7 +23,34 @@ export const metadata: Metadata = {
   title: "WE CTRL ALT DLT",
   description: "WECTRLALTDLT",
   generator: "WECTRLALTDLT",
-}
+  icons: {
+    icon: "/favicon.ico",                  // 🟠 Browser tab icon
+    shortcut: "/site-icon.jpg",        // 🟠 Optional
+    apple: "/apple-touch-icon.png",        // 🟠 For iOS home screen
+  },
+  openGraph: {
+    title: "WE CTRL ALT DLT",
+    description: "WECTRLALTDLT",
+    url: "https://your-domain.com",       // replace with your actual domain
+    siteName: "WE CTRL ALT DLT",
+    images: [
+      {
+        url: "/og-image.png",            // 🟠 This is your social preview image
+        width: 1200,
+        height: 630,
+        alt: "WE CTRL ALT DLT Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "WE CTRL ALT DLT",
+    description: "WECTRLALTDLT",
+    images: ["/og-image.png"],           // 🟠 Same image can be reused
+  },
+};
 
 export default function RootLayout({
   children,
@@ -32,7 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable}`}>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}  suppressHydrationWarning >
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />
       </body>

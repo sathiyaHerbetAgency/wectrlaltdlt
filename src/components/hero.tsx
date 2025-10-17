@@ -5,9 +5,10 @@ import { CTAButtons } from "./cta-buttons"
 export function Hero() {
 const target = new Date(2025, 11, 31, 12, 0, 0);
   return (
-    <section className="relative isolate overflow-hidden bg-hero-background text-hero-foreground">
-     {/* <video
-        className="absolute inset-0 h-full w-full object-cover"
+    <section className="relative  isolate overflow-hidden min-h-[94vh] md:min-h-auto bg-hero-background text-hero-foreground">
+     <video
+        className="absolute hidden md:block  h-full w-full    // 👈 mobile
+           md:object-cover md:object-center // 👈 desktop " 
         autoPlay
         muted
         loop
@@ -16,7 +17,7 @@ const target = new Date(2025, 11, 31, 12, 0, 0);
         src="/BG/hero-bg.mp4"
       />
 
-  <div class="absolute inset-0 bg-black/40"></div> */}
+  <div className="absolute inset-0 bg-black/40"></div>
       {/* Background image swaps for mobile/desktop */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
        

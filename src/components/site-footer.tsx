@@ -3,10 +3,10 @@ import Link from "next/link"
 import { Logo } from "./logo mob"
 
 const navLinks = [
-  { href: "/about", label: "About" },
-  { href: "/tickets", label: "Tickets & Packages" },
+  { href: "/#about", label: "About" },
+  { href: "/#tickets", label: "Tickets & Packages" },
   { href: "/faq", label: "FAQ" },
-  { href: "/contact", label: "Contact Us" },
+  // { href: "/contact", label: "Contact Us" },
 ]
 
 function IconFacebook(props: React.SVGProps<SVGSVGElement>) {
@@ -93,16 +93,16 @@ export function SiteFooter() {
           <div className="flex flex-col items-center md:items-end gap-4">
             <p className="text-lg font-semibold">Follow Us</p>
             <div className="flex items-center gap-5" aria-label="Social media">
-              <Link aria-label="Facebook" href="https://facebook.com" className="hover:opacity-80">
+              <Link aria-label="Facebook" href="https://www.facebook.com/wectrlaltdlt" className="hover:opacity-80">
                 <IconFacebook className="h-6 w-6" />
               </Link>
-              <Link aria-label="YouTube" href="https://youtube.com" className="hover:opacity-80">
+              {/* <Link aria-label="YouTube" href="https://youtube.com" className="hover:opacity-80">
                 <IconYouTube className="h-6 w-6" />
-              </Link>
-              <Link aria-label="Instagram" href="https://instagram.com" className="hover:opacity-80">
+              </Link> */}
+              <Link aria-label="Instagram" href="https://www.instagram.com/wectrlaltdlt/" className="hover:opacity-80">
                 <IconInstagram className="h-6 w-6" />
               </Link>
-              <Link aria-label="TikTok" href="https://tiktok.com" className="hover:opacity-80">
+              <Link aria-label="TikTok" href="https://www.tiktok.com/@wectrlaltdlt?is_from_webapp=1&sender_device=pc" className="hover:opacity-80">
                 <IconTikTok className="h-6 w-6" />
               </Link>
             </div>

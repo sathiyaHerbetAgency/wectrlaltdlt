@@ -4,8 +4,8 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 
 const links = [
-  { href: "#lineup", label: "Lineup" },
-  { href: "#layout", label: "Layout" },
+  { href: "/#lineup", label: "Lineup" },
+  { href: "/#layout", label: "Layout" },
  
 ]
 

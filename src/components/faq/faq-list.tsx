@@ -1,12 +1,19 @@
 import type React from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Link } from 'next/link';
 
 type FaqItem = { q: string; a: React.ReactNode }
 
 const ticketing: FaqItem[] = [
   {
     q: "How can I buy tickets to CTRL ALT DLT 2025?",
-    a: "Tickets are available via www.wectraltdlt.com.",
+    a: (
+       <div className="space-y-3 text-sm/6 md:text-[16px] font-[inter] text-white">
+        <div>
+          <div className="font-normal">Tickets are available via  <a className="hover:underline" href="https://www.ticketmelon.com/cadevents/Wectrlaltdlt/" target="blank">Ticket Melon</a> and <a className="hover:underline" href="https://www.ticketmelon.com/cadevents/Wectrlaltdlt/" target="blank">Tixer</a> </div>
+        </div>
+        </div>
+    ),
   },
   {
     q: "What are the ticket categories?",
@@ -22,7 +29,7 @@ const ticketing: FaqItem[] = [
         </div>
         <p className="italic">*Ticket prices exclude ticketing fees and booking charges.</p>
         <div>
-          <div className="font-normal">VVIP SOFA</div>
+          <div className="font-normal"> Premium Stage Experience (VVIP Sofa)</div>
           <div>Reserve your spot at info@ctrlaltdlt.com</div>
         </div>
       </div>
@@ -34,7 +41,7 @@ const ticketing: FaqItem[] = [
   },
   {
     q: "What are the accepted payment methods?",
-    a: "Credit, debit, and FPX online banking. Buy Now, Pay Later payment methods are available via Ticketmelon such as Atome, SpayLater, and PayLater by Grab. Ensure your bank authorises online purchases and you have a sufficient purchase limit.",
+    a: "We accept card payments (Credit + Debit) and FPX Online Banking. Buy Now Pay Later payment methods are also available via Atome, SpayLater, and PayLater by Grab.",
   },
    {
     q: "Will I receive any confirmation for my purchase?",
@@ -42,11 +49,25 @@ const ticketing: FaqItem[] = [
   },
   {
     q: "What should I do if I receive an error message?",
-    a: "If you receive an error message while making a purchase, contact our hotline at +601XXX or email us at info@wectrlaltdlt.com. ",
+    a: (
+       <div className="space-y-3 text-sm/6 md:text-[16px] font-[inter] text-white">
+       
+          <div className="font-normal">
+            <p> If you receive an error message while making a purchase, kindly email us at info@wectrlaltdlt.com </p>
+       
+        </div>  
+        </div>
+    ),
+    
+    
   },
   {
     q: "Are the tickets refundable? ",
-    a: "No, the tickets are not refundable after purchase and cannot be resold, transferred, or exchanged. ",
+    a: (<div>
+      <p>No, the tickets are not refundable after purchase and cannot be resold, transferred, or exchanged.</p>
+       <p className="italic">*Other ticketing terms and conditions may apply. </p>
+      </div>
+    )
   },
 ]
 const eventDetails: FaqItem[] = [
@@ -69,8 +90,8 @@ const eventDetails: FaqItem[] = [
     a: "Entry to this event is restricted to individuals who are legally 18 years of age and older. A valid government-issued photo identification with proof of age must be presented upon entry. ",
   },
    {
-    q: "Is this a seated event?",
-    a: "CTRL ALT DLT is a standing event. VVIP Sofas will be available for those who reserve the package via info@ctrlaltdlt.com",
+    q: "Will the festival be cancelled if it rains?",
+    a: "Unless by advised by officials, the festival will continue as usual even if a less than ideal weather condition is present.",
   },
   {
     q: "What is the lineup and timetable?",
@@ -85,7 +106,7 @@ const venueInfo: FaqItem[] = [
     a: (
       <div className="space-y-3 text-sm/6 md:text-[16px] font-[inter] text-white">
         <div>
-          <div className="font-normal">Prohibited items include: professional cameras, audio/video recording equipment, large bags, weapons, outside food/drinks, etc. Full list will be published closer to the event date.</div>
+          <div className="font-normal">Prohibited items include: all type of cameras (except for phone camera), audio/video recording equipment, large bags, weapons, outside food/drinks, etc. Full list will be published closer to the event date.</div>
         </div>
         
         <p className="italic text-[10px]">*The organisers and/promoters reserve the rights to amend the list without any prior notice.</p>
@@ -131,7 +152,7 @@ export default function FaqList() {
 
         <Accordion type="multiple" className="space-y-4">
           {ticketing.map((item, idx) => (
-            <div className="p-[1px] rounded-lg bg-gradient-to-r from-[#54DEFB] to-[#1B1E23]">
+            <div key={idx+1} className="p-[1px] rounded-lg bg-gradient-to-r from-[#54DEFB] to-[#1B1E23]">
             <AccordionItem
               key={idx}
               value={`item-${idx}`}
@@ -171,7 +192,7 @@ export default function FaqList() {
 
         <Accordion type="multiple" className="space-y-4">
           {venueInfo.map((item, idx) => (
-            <div className="p-[1px] rounded-lg bg-gradient-to-r from-[#54DEFB] to-[#1B1E23]">
+            <div  className="p-[1px] rounded-lg bg-gradient-to-r from-[#54DEFB] to-[#1B1E23]">
             <AccordionItem
               key={idx}
               value={`item-${idx}`}
