@@ -79,11 +79,11 @@ export function SiteFooter() {
               </div>
             ))}
             <div className="pt-4 text-xs text-background/70 md:hidden">
-              <Link href="/terms" className="hover:opacity-80">
+              <Link href="/terms&condition" className="hover:opacity-80">
                 TERMS & CONDITIONS
               </Link>
               <span className="px-2">|</span>
-              <Link href="/privacy" className="hover:opacity-80">
+              <Link href="/privacy-policy" className="hover:opacity-80">
                 PRIVACY POLICY
               </Link>
             </div>
