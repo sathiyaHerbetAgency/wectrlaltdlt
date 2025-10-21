@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function TermsConditionHero() {
+export default function ermsConditionHero() {
   return (
     <header className="relative w-full bg-faq">
       {/* Background banner */}
@@ -14,7 +14,7 @@ export default function TermsConditionHero() {
         {/* <h1 className="font-sans text-balance text-2xl md:text-4xl font-semibold tracking-tight text-foreground">
           Frequently Asked Questions
         </h1> */}
-                <img src="/images/faq/faq-title.webp" alt="FAQ banner"    className=" w-[70%] md:w-xl" />
+                <img src="/images/faq/t&c-title.webp" alt="T&C title"    className=" w-[40%] md:w-[250px]" />
 
       </div>
     </header>
