@@ -166,12 +166,11 @@ export default function FaqList() {
           ))}
         </Accordion>
       </div>
-       <div className="mx-auto max-w-5xl px-4 ">
+       <div className="mx-auto max-w-5xl px-4 py-8 md:py-12">
         <p className=" text-xs md:text-sm font-medium font-[inter] text-white mb-4">Event Details </p>
 
-        <p className=" text-xs md:text-sm font-medium font-[inter] text-white">Stay tuned! Details will be announced closer to the event </p>
 
-        {/* <Accordion type="multiple" className="space-y-4">
+        <Accordion type="multiple" className="space-y-4">
           {eventDetails.map((item, idx) => (
             <div className="p-[1px] rounded-lg bg-gradient-to-r from-[#54DEFB] to-[#1B1E23]">
             <AccordionItem
@@ -186,12 +185,13 @@ export default function FaqList() {
             </AccordionItem>
             </div>
           ))}
-        </Accordion> */}
+        </Accordion>
       </div>
-      <div className="mx-auto max-w-5xl px-4 py-8 md:py-12">
-        <p className="mb-4 text-xs md:text-sm font-medium font-[inter] text-white">Venue & Entry Info</p>
+      <div className="mx-auto max-w-5xl px-4 ">
+        <p className=" text-xs md:text-sm font-medium font-[inter] text-white">Venue & Entry Info</p>
+        <p className=" text-xs md:text-sm font-medium font-[inter] text-white">Stay tuned! Details will be announced closer to the event </p>
 
-        <Accordion type="multiple" className="space-y-4">
+        {/* <Accordion type="multiple" className="space-y-4">
           {venueInfo.map((item, idx) => (
             <div  className="p-[1px] rounded-lg bg-gradient-to-r from-[#54DEFB] to-[#1B1E23]">
             <AccordionItem
@@ -206,7 +206,7 @@ export default function FaqList() {
             </AccordionItem>
             </div>
           ))}
-        </Accordion>
+        </Accordion> */}
       </div>
     </section>
   )
