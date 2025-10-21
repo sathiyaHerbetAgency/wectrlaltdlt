@@ -12,7 +12,7 @@ import {TextContainer} from '@/components/textContainer/text-container';
 export default function Page() {
   return (
     <main>
-      <Navbar classname="bg-navbar" />
+      <Navbar />
       <Hero />
       <TextContainer />
       <section id="lineup" className="w-full bg-black bg-lineup py-16">

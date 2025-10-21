@@ -10,7 +10,7 @@ import {TermsConditions} from './../../components/terms-condition/terms-conditio
  const page = () => {
   return (
     <div>
-        <Navbar className="bg-navbar" />
+        <Navbar />
         <TermsConditionHero />
         <TermsConditions />
         <SiteFooter />

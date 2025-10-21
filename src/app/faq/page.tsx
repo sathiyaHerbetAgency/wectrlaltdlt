@@ -6,7 +6,7 @@ import { SiteFooter } from './../../components/site-footer';
 export default function faq() {
   return (
     <main className="min-h-dvh w-full bg-background">
-        <Navbar classname="bg-navbar" />
+        <Navbar  />
         <FaqHero />
         <FaqList />
         <SiteFooter />

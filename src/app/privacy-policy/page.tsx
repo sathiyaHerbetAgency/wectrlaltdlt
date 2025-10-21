@@ -7,7 +7,7 @@ import { SiteFooter } from './../../components/site-footer';
  const page = () => {
   return (
     <div>
-        <Navbar className="bg-navbar" />
+        <Navbar  />
         <PrivacyPolicyHero />
         <PrivacyPolicy />
         <SiteFooter />
