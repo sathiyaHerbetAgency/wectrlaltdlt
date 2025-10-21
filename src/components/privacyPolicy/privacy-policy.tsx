@@ -4,7 +4,7 @@ export function PrivacyPolicy() {
     <section className="text-white space-y-4 max-w-[1140px] mx-auto font-[inter] px-4 py-8 md:py-12">    
       <section className="space-y-4 ">
         <h2 className="text-2xl font-bold text-white">Data Collection</h2>
-        <div className="space-y-3 text-muted-white leading-relaxed">
+        <div className="space-y-3 text-white leading-relaxed">
           <div>
             <h3 className="font-semibold text-white">1.1. Personal Information</h3>
             <p>
@@ -33,7 +33,7 @@ export function PrivacyPolicy() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-bold text-white">Information Usage</h2>
-        <div className="space-y-3 text-muted-white leading-relaxed">
+        <div className="space-y-3 text-white leading-relaxed">
           <div>
             <h3 className="font-semibold text-white">2.1. Festival Services</h3>
             <p>
@@ -64,7 +64,7 @@ export function PrivacyPolicy() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-bold text-white">Data Security</h2>
-        <p className="text-muted-white leading-relaxed">
+        <p className="text-white leading-relaxed">
           CAD takes reasonable steps to protect your personal information. However, please be aware that no method of
           data transmission over the internet can be guaranteed as entirely secure. You share information with us at
           your own risk.
@@ -73,7 +73,7 @@ export function PrivacyPolicy() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-bold text-white">Data Sharing</h2>
-        <p className="text-muted-white leading-relaxed">
+        <p className="text-white leading-relaxed">
           CAD does not sell or rent your personal information to third parties. However, CAD may share your information
           with service providers, event partners, and authorities as required by law or in the interest of festival
           security and safety.
@@ -82,7 +82,7 @@ export function PrivacyPolicy() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-bold text-white">Cookies and Tracking</h2>
-        <p className="text-muted-white leading-relaxed">
+        <p className="text-white leading-relaxed">
           CAD may use cookies and other tracking technologies to collect data about your interactions with our Website.
           You can manage your cookie preferences through your browser settings.
         </p>
@@ -90,7 +90,7 @@ export function PrivacyPolicy() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-bold text-white">Third-party Links</h2>
-        <p className="text-muted-white leading-relaxed">
+        <p className="text-white leading-relaxed">
           Our Website may contain links to third-party websites. CAD is not responsible for the privacy practices or
           content of these third-party websites.
         </p>
@@ -98,14 +98,14 @@ export function PrivacyPolicy() {
 
       <section className="space-y-4">
         <h2 className="text-2xl font-bold text-white">Changes to This Privacy Policy</h2>
-        <p className="text-muted-white leading-relaxed">
+        <p className="text-white leading-relaxed">
           CAD may periodically update this Privacy Policy. Any changes will be posted on this page, along with a revised
           "Effective Date." It is your responsibility to review the policy regularly.
         </p>
       </section>
 
       <section className="space-y-4 pt-4 border-t border-border">
-        <p className="text-muted-white leading-relaxed">
+        <p className="text-white leading-relaxed">
           If you have any questions or concerns regarding this Privacy Policy or your personal information, please
           contact us at{" "}
           <a href="mailto:info@wectrlaltdlt.com" className="text-primary hover:underline">
@@ -113,7 +113,7 @@ export function PrivacyPolicy() {
           </a>
           .
         </p>
-        <p className="text-xs text-muted-white">Last Updated: 21 October 2025</p>
+        <p className="text-xs text-white">Last Updated: 21 October 2025</p>
       </section>
     </section>
     </div>
