@@ -113,11 +113,11 @@ export function SiteFooter() {
         <div className="mt-12 border-t border-background/15 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-background/70">
           <p>COPYRIGHT 2025 © ALL RIGHTS RESERVED.</p>
           <div className="hidden md:block">
-            <Link href="/terms" className="hover:opacity-80">
+            <Link href="/terms&condition" className="hover:opacity-80">
               TERMS & CONDITIONS
             </Link>
             <span className="px-2">|</span>
-            <Link href="/privacy" className="hover:opacity-80">
+            <Link href="/privacy-policy" className="hover:opacity-80">
               PRIVACY POLICY
             </Link>
           </div>

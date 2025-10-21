@@ -7,7 +7,7 @@ const target = new Date(2025, 11, 31, 12, 0, 0);
   return (
     <section className="relative  isolate overflow-hidden min-h-[94vh] md:min-h-auto bg-hero-background text-hero-foreground">
      <video
-        className="absolute  md:block  h-full w-full    // 👈 mobile
+        className="absolute hidden  md:block  h-full w-full    // 👈 mobile
            object-cover md:object-center object-right // 👈 desktop " 
         autoPlay
         muted
@@ -15,6 +15,16 @@ const target = new Date(2025, 11, 31, 12, 0, 0);
         playsInline
         poster="/BG/hero-desktop-bg.webp"
         src="/BG/hero-bg.mp4"
+      />
+      <video
+        className="absolute  md:hidden  h-full w-full    // 👈 mobile
+           object-cover   // 👈 desktop " 
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster="/BG/hero-mob-bg.webp"
+        src="/BG/hero-mob-bg.mp4"
       />
 
   <div className="absolute inset-0 bg-black/40"></div>
