@@ -22,7 +22,7 @@ export default function EventLayout() {
       </div>
       <div className="md:mx-auto max-w-7xl md:px-4">
         <div className="flex justify-center   items-center">
-          <p className="text-center uppercase text-[8px] md:text-[15px] text-[#fff] font-medium font-[Rajdhani] max-w-xs md:max-w-5xl">
+          <p className="text-center uppercase text-[8px] md:text-[15px] text-[#fff]/50 font-medium font-[Rajdhani] max-w-xs md:max-w-5xl">
             Disclaimer :Venue layout is not drawn to scale and is for ticket location purposes only. Colour indicates price category. 
 Layout is subject to change without prior notice. Ticket price excludes ticket fee & booking charges.</p>  
         </div>

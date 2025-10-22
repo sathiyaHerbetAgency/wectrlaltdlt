@@ -34,8 +34,8 @@ export default function VVIP() {
            For VVIP sofa inquiry, kindly email to info@wectrlaltdlt.com</p>  
         </div>
         <div className="mx-auto max-w-7xl px-4">
-          <div className="flex justify-center">
-            <img src="/images/VVIP/Logoline_CAD.png" alt="Logo Line"    className="object-contain  md:w-lg" />
+          <div className="flex justify-center pt-4">
+            <img src="/images/VVIP/Logoline_CAD.png" alt="Logo Line"    className="object-contain   md:w-xl" />
           </div>
         </div>
       </div>
