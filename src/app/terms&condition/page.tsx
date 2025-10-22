@@ -9,7 +9,7 @@ import {TermsConditions} from './../../components/terms-condition/terms-conditio
 
  const page = () => {
   return (
-    <div>
+    <div className="min-h-dvh w-full bg-background">
         <Navbar />
         <TermsConditionHero />
         <TermsConditions />

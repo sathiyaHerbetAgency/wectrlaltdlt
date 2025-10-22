@@ -95,7 +95,7 @@ export default function TicketPricing() {
 
           </div>   
         </div>
-        <p className="italic text-center uppercase text-[12px] self-center md:text-[15px] text-[#fff] font-medium font-[Rajdhani] max-w-5xl">
+        <p className="italic text-center uppercase text-[6px] self-center md:text-[8px] text-[#fff]/70 font-medium font-[Rajdhani] max-w-5xl">
            Disclaimer : Ticket Price Excludes Ticket Fee & Booking Charges</p>  
       </div>
     </section>

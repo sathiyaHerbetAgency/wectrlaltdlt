@@ -1,113 +1,166 @@
-export function TermsConditions() {
+// export function TermsConditions() {
+//   return (
+//     <div className="space-y-8 bg-black">
+//           <section className="space-y-4 max-w-[1140px] mx-auto font-[inter] px-4 py-8 md:py-12">    
+//       <section className="space-y-4">
+//         <h2 className="text-2xl font-bold text-white">Acceptance of Terms</h2>
+//         <p className="text-white leading-relaxed">
+//           By accessing or using the Ctrl Alt Dlt (CAD) website (the "Website"), you agree to comply with and be bound by
+//           these Terms and Conditions. If you do not agree to these terms, please do not use the Website.
+//         </p>
+//       </section>
+
+//       <section className="space-y-4">
+//         <h2 className="text-2xl font-bold text-white">Use of Content</h2>
+//         <p className="text-white leading-relaxed">
+//           All content on this Website, including but not limited to text, graphics, images, audio, and video clips, is
+//           the property of CAD and is protected by copyright and other intellectual property laws. You may not reproduce,
+//           distribute, display, or otherwise use any content from this Website without the express written consent of
+//           CAD.
+//         </p>
+//       </section>
+
+//       <section className="space-y-4">
+//         <h2 className="text-2xl font-bold text-white">User Conduct</h2>
+//         <ul className="space-y-3 text-white leading-relaxed list-disc list-inside">
+//           <li>You agree not to use the Website for any unlawful or prohibited purpose.</li>
+//           <li>
+//             You will not engage in any activities that could harm, disable, overburden, or impair the Website or
+//             interfere with other users' access to the Website.
+//           </li>
+//           <li>
+//             You will not attempt to gain unauthorised access to any part of the Website or any other systems or networks
+//             connected to the Website.
+//           </li>
+//         </ul>
+//       </section>
+
+//       <section className="space-y-4">
+//         <h2 className="text-2xl font-bold text-white">Privacy</h2>
+//         <p className="text-white leading-relaxed">
+//           By using the Website, you consent to the collection and use of your information as described in the Privacy
+//           Policy.
+//         </p>
+//       </section>
+
+//       <section className="space-y-4">
+//         <h2 className="text-2xl font-bold text-white">Termination</h2>
+//         <p className="text-white leading-relaxed">
+//           CAD reserves the right to terminate or suspend your access to the Website at its sole discretion and without
+//           notice for any reason, including a violation of these Terms and Conditions.
+//         </p>
+//       </section>
+
+//       <section className="space-y-4">
+//         <h2 className="text-2xl font-bold text-white">Changes to Terms</h2>
+//         <p className="text-white leading-relaxed">
+//           CAD may revise these Terms and Conditions at any time. Your continued use of the Website after any such
+//           changes will constitute your acceptance of the revised terms.
+//         </p>
+//       </section>
+
+//       <section className="space-y-4">
+//         <h2 className="text-2xl font-bold text-white">Disclaimer of Liability</h2>
+//         <p className="text-white leading-relaxed">
+//           The Website is provided "as is" and CAD makes no warranties or representations about the accuracy or
+//           completeness of the content. CAD shall not be liable for any direct, indirect, incidental, consequential, or
+//           punitive damages arising out of your use of the Website.
+//         </p>
+//       </section>
+
+//       <section className="space-y-4">
+//         <h2 className="text-2xl font-bold text-white">Governing Law</h2>
+//         <p className="text-white leading-relaxed">
+//           The Organiser shall not be responsible for loss or damage of property or belongings. Please keep all items at
+//           your own risk.
+//         </p>
+//       </section>
+
+//       <section className="space-y-4">
+//         <h2 className="text-2xl font-bold text-white">Media & Photography Consent</h2>
+//         <p className="text-white leading-relaxed">
+//           The organiser reserves the right to use photography, motion pictures, recordings, or any other media records
+//           taken by media officials of the event for promotional purposes.
+//         </p>
+//       </section>
+
+//       <section className="space-y-4">
+//         <h2 className="text-2xl font-bold text-white">Copyright</h2>
+//         <p className="text-white leading-relaxed">
+//           All content, logos, and visual media on this Website are the exclusive property of CAD and are fully protected
+//           under copyright laws. No content associated with CAD may be sold, modified, rented, loaned, shared, or
+//           distributed without prior written permission from the Organiser.
+//         </p>
+//       </section>
+
+//       <section className="space-y-4 pt-4 border-t border-border">
+//         <p className="text-sm text-white">
+//           If you have any questions about these Terms and Conditions, please contact us at{" "}
+//           <a href="mailto:info@wectrlaltdlt.com" className="text-primary hover:underline">
+//             info@wectrlaltdlt.com
+//           </a>
+//         </p>
+//         <p className="text-sm text-white">
+//           By accessing and using the CAD website, you acknowledge that you have read, understood, and agreed to be bound
+//           by these Terms and Conditions.
+//         </p>
+//         <p className="text-xs text-white">Last Updated: 21 October 2025</p>
+//       </section>
+//       </section>
+
+//     </div>
+//   )
+// }
+
+"use client";
+
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import TicketTerms from './ticket-terms';
+import WebsiteTerms from './website-terms';
+
+type TabKey = "tickets" | "website";
+
+export  function TermsConditions() {
+  const [tab, setTab] = useState<TabKey>("tickets");
+
+  // support deep links like /terms#website or /terms#tickets
+  useEffect(() => {
+    const hash = typeof window !== "undefined" ? window.location.hash.replace("#", "") : "";
+    if (hash === "website") setTab("website");
+    if (hash === "tickets") setTab("tickets");
+  }, []);
+
+  const pillBase =
+    "px-5 py-2 rounded-lg border border-white/10 bg-white/10 text-white/90 backdrop-blur hover:bg-white/15 transition";
+  const pillActive = "bg-white/20 text-white font-semibold shadow-inner";
+
   return (
-    <div className="space-y-8 bg-black">
-          <section className="space-y-4 max-w-[1140px] mx-auto font-[inter] px-4 py-8 md:py-12">    
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">Acceptance of Terms</h2>
-        <p className="text-white leading-relaxed">
-          By accessing or using the Ctrl Alt Dlt (CAD) website (the "Website"), you agree to comply with and be bound by
-          these Terms and Conditions. If you do not agree to these terms, please do not use the Website.
-        </p>
-      </section>
+    <div className="space-y-8 bg-faq-content">
+      <section className="space-y-6 max-w-[1140px] mx-auto font-[inter] px-4 py-8 md:py-12">
 
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">Use of Content</h2>
-        <p className="text-white leading-relaxed">
-          All content on this Website, including but not limited to text, graphics, images, audio, and video clips, is
-          the property of CAD and is protected by copyright and other intellectual property laws. You may not reproduce,
-          distribute, display, or otherwise use any content from this Website without the express written consent of
-          CAD.
-        </p>
-      </section>
+        {/* Pills */}
+        <div className="flex justify-center gap-3">
+          <button
+            onClick={() => { setTab("tickets"); if (history.pushState) history.pushState(null, "", "#tickets"); }}
+            className={`${pillBase} ${tab === "tickets" ? pillActive : ""}`}
+            aria-pressed={tab === "tickets"}
+          >
+            Ticket Sales
+          </button>
+          <button
+            onClick={() => { setTab("website"); if (history.pushState) history.pushState(null, "", "#website"); }}
+            className={`${pillBase} ${tab === "website" ? pillActive : ""}`}
+            aria-pressed={tab === "website"}
+          >
+            Website Use
+          </button>
+        </div>
 
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">User Conduct</h2>
-        <ul className="space-y-3 text-white leading-relaxed list-disc list-inside">
-          <li>You agree not to use the Website for any unlawful or prohibited purpose.</li>
-          <li>
-            You will not engage in any activities that could harm, disable, overburden, or impair the Website or
-            interfere with other users' access to the Website.
-          </li>
-          <li>
-            You will not attempt to gain unauthorised access to any part of the Website or any other systems or networks
-            connected to the Website.
-          </li>
-        </ul>
+        {/* CONTENT */}
+        {tab === "tickets" ? <TicketTerms /> : <WebsiteTerms /> }
       </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">Privacy</h2>
-        <p className="text-white leading-relaxed">
-          By using the Website, you consent to the collection and use of your information as described in the Privacy
-          Policy.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">Termination</h2>
-        <p className="text-white leading-relaxed">
-          CAD reserves the right to terminate or suspend your access to the Website at its sole discretion and without
-          notice for any reason, including a violation of these Terms and Conditions.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">Changes to Terms</h2>
-        <p className="text-white leading-relaxed">
-          CAD may revise these Terms and Conditions at any time. Your continued use of the Website after any such
-          changes will constitute your acceptance of the revised terms.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">Disclaimer of Liability</h2>
-        <p className="text-white leading-relaxed">
-          The Website is provided "as is" and CAD makes no warranties or representations about the accuracy or
-          completeness of the content. CAD shall not be liable for any direct, indirect, incidental, consequential, or
-          punitive damages arising out of your use of the Website.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">Governing Law</h2>
-        <p className="text-white leading-relaxed">
-          The Organiser shall not be responsible for loss or damage of property or belongings. Please keep all items at
-          your own risk.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">Media & Photography Consent</h2>
-        <p className="text-white leading-relaxed">
-          The organiser reserves the right to use photography, motion pictures, recordings, or any other media records
-          taken by media officials of the event for promotional purposes.
-        </p>
-      </section>
-
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-white">Copyright</h2>
-        <p className="text-white leading-relaxed">
-          All content, logos, and visual media on this Website are the exclusive property of CAD and are fully protected
-          under copyright laws. No content associated with CAD may be sold, modified, rented, loaned, shared, or
-          distributed without prior written permission from the Organiser.
-        </p>
-      </section>
-
-      <section className="space-y-4 pt-4 border-t border-border">
-        <p className="text-sm text-white">
-          If you have any questions about these Terms and Conditions, please contact us at{" "}
-          <a href="mailto:info@wectrlaltdlt.com" className="text-primary hover:underline">
-            info@wectrlaltdlt.com
-          </a>
-        </p>
-        <p className="text-sm text-white">
-          By accessing and using the CAD website, you acknowledge that you have read, understood, and agreed to be bound
-          by these Terms and Conditions.
-        </p>
-        <p className="text-xs text-white">Last Updated: 21 October 2025</p>
-      </section>
-      </section>
-
     </div>
-  )
+  );
 }
+
