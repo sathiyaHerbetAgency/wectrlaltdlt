@@ -188,7 +188,7 @@ export default function FaqList() {
           ))}
         </Accordion>
       </div>
-      <div className="mx-auto max-w-5xl px-4 ">
+      <div className="mx-auto max-w-5xl px-4 py-8 md:py-12">
         <p className=" text-xs md:text-sm font-medium font-[inter] text-white">Venue & Entry Info</p>
         <p className=" text-xs md:text-sm font-medium font-[inter] text-white">Stay tuned! Details will be announced closer to the event </p>
 
