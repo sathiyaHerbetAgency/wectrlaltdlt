@@ -9,6 +9,8 @@ import { Rajdhani } from "next/font/google"
 
 import { Suspense } from "react"
 import "./globals.css"
+import { Script } from 'next/script';
+import GtmRouteListener from './../components/GtmRouteListener';
 
 const inter = Inter({
   subsets: ["latin"],
@@ -51,7 +53,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],           // 🟠 Same image can be reused
   },
 };
-
+const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-######"; 
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -59,10 +61,36 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable}`}>
+      <head>
+        {GTM_ID && (
+          <script id="gtm" strategy="afterInteractive">
+            {`
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','${GTM_ID}');
+            `}
+          </script>
+        )}
+      </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}  suppressHydrationWarning >
+          {GTM_ID && (
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            />
+          </noscript>
+        )}
+        <GtmRouteListener />
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />
       </body>
     </html>
   )
 }
+
+
