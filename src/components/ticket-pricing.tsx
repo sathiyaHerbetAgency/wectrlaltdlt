@@ -89,9 +89,9 @@ export default function TicketPricing() {
         <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-4 items-center">
           <p className="text-center uppercase text-sm text-[#fff] font-bold font-[Rajdhani]">Buy now pay later (via TicketMelon)</p>  
           <div className="flex items-center gap-3">
-            <img src="/images/tickets/payment-image-1.png" alt="FAQ banner"    className=" w-[20px] h-[20px]" />
-            <img src="/images/tickets/payment-image-3.png" alt="FAQ banner"    className="w-[40px] h-[30px] " />
-            <img src="/images/tickets/payment-image-2.png" alt="FAQ banner"    className="w-[35px] h-[30px] " />
+            <img src="/images/tickets/payment-image-1.png" alt="FAQ banner"    className=" w-[25px] h-[25px]" />
+            <img src="/images/tickets/payment-image-3.png" alt="FAQ banner"    className="w-[50px] h-[30px] " />
+            <img src="/images/tickets/payment-image-2.png" alt="FAQ banner"    className="w-[40px] h-[35px] " />
 
           </div>   
         </div>

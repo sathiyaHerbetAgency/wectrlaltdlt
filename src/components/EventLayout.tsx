@@ -6,7 +6,7 @@ export default function EventLayout() {
 
   return (
     <section id="layout" className=" text-foreground">
-      <div className="mx-auto max-w-6xl px-6 py-4 md:py-16">
+      <div className="mx-auto max-w-6xl px-6 py-4 md:py-4">
         <header className="text-center flex justify-center mb-6">
                    <img src="/images/Event/EventText.webp" className="w-md pb-3" alt="Event Layout Map" />
 
@@ -21,10 +21,10 @@ export default function EventLayout() {
         </div>
       </div>
       <div className="md:mx-auto max-w-7xl md:px-4">
-        <div className="flex justify-center   items-center">
+        <div className="flex justify-center items-center">
           <p className="text-center uppercase text-[8px] md:text-[15px] text-[#fff]/50 font-medium font-[Rajdhani] max-w-xs md:max-w-5xl">
             Disclaimer :Venue layout is not drawn to scale and is for ticket location purposes only. Colour indicates price category. 
-Layout is subject to change without prior notice. Ticket price excludes ticket fee & booking charges.</p>  
+            Layout is subject to change without prior notice. Ticket price excludes ticket fee & booking charges.</p>  
         </div>
       </div>
     </section>
