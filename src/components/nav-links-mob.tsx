@@ -4,10 +4,10 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 
 const links = [
-  { href: "#lineup", label: "Lineup" },
-  { href: "#layout", label: "Layout" },
-  { href: "faq", label: "FAQ" },
-  { href: "#tickets", label: "Tickets" },
+  { href: "/#lineup", label: "Lineup" },
+  { href: "/#layout", label: "Layout" },
+  { href: "/faq", label: "FAQ" },
+  { href: "/#tickets", label: "Tickets" },
 ];
 
 export function NavLinks({ className }: { className?: string }) {
