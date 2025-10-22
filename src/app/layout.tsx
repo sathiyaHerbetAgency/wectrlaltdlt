@@ -62,7 +62,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable}`}>
       <head>
         {GTM_ID && (
-          <script id="gtm" strategy="afterInteractive">
+          <script id="gtm">
             {`
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
