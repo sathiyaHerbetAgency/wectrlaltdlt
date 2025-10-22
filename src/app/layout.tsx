@@ -9,7 +9,6 @@ import { Rajdhani } from "next/font/google"
 
 import { Suspense } from "react"
 import "./globals.css"
-import { Script } from 'next/script';
 import GtmRouteListener from './../components/GtmRouteListener';
 
 const inter = Inter({
