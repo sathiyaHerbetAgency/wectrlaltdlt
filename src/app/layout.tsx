@@ -84,7 +84,9 @@ export default function RootLayout({
             />
           </noscript>
         )}
-        <GtmRouteListener />
+        <Suspense fallback={null}>
+          <GtmRouteListener />
+        </Suspense>
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />
       </body>
