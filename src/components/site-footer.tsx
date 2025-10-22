@@ -67,18 +67,18 @@ export function SiteFooter() {
           </div>
 
           {/* Navigation */}
-          <nav aria-label="Footer" className="space-y-4">
+          <nav aria-label="Footer" className="space-y-2 md:space-y-4">
             {navLinks.map((l) => (
               <div key={l.href}>
                 <Link
                   href={l.href}
-                  className="text-lg font-medium hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-background/40 focus:ring-offset-foreground"
+                  className="text-sm md:text-lg font-medium hover:opacity-80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-background/40 focus:ring-offset-foreground"
                 >
                   {l.label}
                 </Link>
               </div>
             ))}
-            <div className="pt-4 text-xs text-background/70 md:hidden">
+            <div className="pt-4 text-xs font-[inter] text-background/70 md:hidden">
               <Link href="/terms&condition" className="hover:opacity-80">
                 TERMS & CONDITIONS
               </Link>
@@ -91,7 +91,7 @@ export function SiteFooter() {
 
           {/* Social */}
           <div className="flex flex-col items-center md:items-end gap-4">
-            <p className="text-lg font-semibold">Follow Us</p>
+            <p className="text-md md:text-lg font-semibold">Follow Us</p>
             <div className="flex items-center gap-5" aria-label="Social media">
               <Link aria-label="Facebook" href="https://www.facebook.com/wectrlaltdlt" className="hover:opacity-80">
                 <IconFacebook className="h-6 w-6" />
@@ -110,7 +110,7 @@ export function SiteFooter() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 border-t border-background/15 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-background/70">
+        <div className="mt-12 border-t font-[inter] border-background/15 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-[8px] md:text-xs text-background/70">
           <p>COPYRIGHT 2025 © ALL RIGHTS RESERVED.</p>
           <div className="hidden md:block">
             <Link href="/terms&condition" className="hover:opacity-80">

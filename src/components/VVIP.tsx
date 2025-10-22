@@ -6,9 +6,9 @@ export default function VVIP() {
 
   return (
     <section className=" text-foreground pb-24">
-      <div className="mx-auto max-w-6xl px-6 py-16">
+      <div className="mx-auto max-w-6xl px-6 py-4 md:py-6">
         <header className="text-center flex justify-center mb-6">
-                   <img src="/images/VVIP/VVIPText.webp" className="w-2xl pb-3" alt="Event Layout Map" />
+                   <img src="/images/VVIP/VVIPText.webp" className="w-xs md:w-md md:pb-3" alt="Event Layout Map" />
 
         </header>
 
@@ -21,7 +21,7 @@ export default function VVIP() {
         </div>
       </div>
         <div className="mx-auto max-w-7xl px-4">
-        <div className="flex flex-col justify-center gap-4 items-center">
+        <div className="flex flex-col justify-center  items-center">
            {/* <Link
       href={"#packages"}
       className="neon-button uppercasae inline-flex text-white items-center justify-center px-4 py-2 md:px-6 md:py-2.5

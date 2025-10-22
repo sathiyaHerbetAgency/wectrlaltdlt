@@ -18,7 +18,7 @@ export function Logo({ className }: LogoProps) {
         className,
       )}
     >
-      <img src="./mob-logo.webp" alt="CTRL ALT DLT" className="w-50 " />
+      <img src="./mob-logo.webp" alt="CTRL ALT DLT" className="w-40 " />
     </Link>
   )
 }

@@ -23,7 +23,7 @@ const ticketing: FaqItem[] = [
           <div>RM188.00 onwards</div>
         </div>
         <div>
-          <div className="font-normal">STAGE PASS</div>
+          <div className="font-normal">Reboot Pass (Stage Experience)</div>
           <div>RM648.00 onwards.</div>
         </div>
         <p className="italic">*Ticket prices exclude ticketing fees and booking charges.</p>
@@ -40,7 +40,7 @@ const ticketing: FaqItem[] = [
   },
   {
     q: "What are the accepted payment methods?",
-    a: "We accept card payments (Credit + Debit) and FPX Online Banking. Buy Now Pay Later payment methods are also available via Atome, SpayLater, and PayLater by Grab.",
+    a: "We accept card payments (Credit & Debit) and FPX Online Banking. Buy Now Pay Later payment methods are also available via Atome, PayLater by Grab and SpayLater (via Ticketmelon)",
   },
    {
     q: "Will I receive any confirmation for my purchase?",
@@ -62,11 +62,11 @@ const ticketing: FaqItem[] = [
   },
   {
     q: "Are the tickets refundable? ",
-    a: (<div>
-      <p>No, the tickets are not refundable after purchase and cannot be resold, transferred, or exchanged.</p>
-       <p className="italic">*Other ticketing terms and conditions may apply. </p>
-      </div>
-    )
+    a: "No, the tickets are not refundable after purchase and cannot be resold, transferred, or exchanged."
+  },
+  {
+    q: "Am I required to create an account for my selected ticketing platform (Ticketmelon or Tixr) to purchase tickets?",
+    a: "Yes, in order to purchase tickets, you are required to register an account for the selected platform."
   },
 ]
 const eventDetails: FaqItem[] = [
@@ -165,6 +165,7 @@ export default function FaqList() {
             </div>
           ))}
         </Accordion>
+               <p className="italic text-[10px] md:text-[12px] font-normal font-[inter] text-white mt-3">*Other ticketing terms and conditions may apply. </p>
       </div>
        <div className="mx-auto max-w-5xl px-4 py-8 md:py-12">
         <p className=" text-xs md:text-sm font-medium font-[inter] text-white mb-4">Event Details </p>

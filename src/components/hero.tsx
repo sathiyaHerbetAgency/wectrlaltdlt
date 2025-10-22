@@ -35,7 +35,7 @@ const target = new Date(2025, 11, 31, 12, 0, 0);
         <div className="absolute inset-x-0 top-0 h-40 md:h-56 bg-[radial-gradient(50%_70%_at_50%_0%,rgba(40,98,255,0.35),transparent_70%)]" />
       </div>
 
-      <div className="relative mx-auto max-w-5xl px-4 md:px-6 py-20 md:py-28 min-h-[80svh] md:min-h-[85svh] flex flex-col items-center justify-center">
+      <div className="relative mx-auto max-w-5xl px-4 md:px-6 py-6 md:py-28 min-h-[80svh] md:min-h-[85svh] flex flex-col items-center md:justify-center">
         <Tagline />
         <Countdown target={target} />
         <CTAButtons />
