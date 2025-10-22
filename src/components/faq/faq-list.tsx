@@ -190,7 +190,7 @@ export default function FaqList() {
       </div>
       <div className="mx-auto max-w-5xl px-4 py-8 md:py-12">
         <p className=" text-xs md:text-sm font-medium font-[inter] text-white">Venue & Entry Info</p>
-        <p className=" text-xs md:text-sm font-medium font-[inter] text-white">Stay tuned! Details will be announced closer to the event </p>
+        <p className=" text-xs md:text-sm italic pt-3 font-[inter] text-white">Stay tuned! Details will be announced closer to the event </p>
 
         {/* <Accordion type="multiple" className="space-y-4">
           {venueInfo.map((item, idx) => (
