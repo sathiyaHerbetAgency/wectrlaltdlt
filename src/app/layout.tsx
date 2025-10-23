@@ -73,6 +73,7 @@ export default function RootLayout({
             `}
           </script>
         )}
+         <meta property='og:image' content='/mob-logo.png'/>
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}  suppressHydrationWarning >
           {GTM_ID && (
