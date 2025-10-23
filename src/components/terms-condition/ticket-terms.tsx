@@ -63,7 +63,7 @@ export default function TicketTerms() {
       <section className="space-y-2 pt-4 border-t border-white/10">
         <p className="text-sm text-white">
           Questions about ticket terms? Email{" "}
-          <a href="mailto:info@wectrlaltdlt.com" className="text-white underline" style={{color:"#fff"}}>
+          <a href="mailto:info@wectrlaltdlt.com" className="text-white underline textWhite" style={{color:"#fff"}}>
             info@wectrlaltdlt.com
           </a>
           .

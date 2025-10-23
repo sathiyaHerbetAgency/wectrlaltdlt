@@ -108,7 +108,7 @@ export function PrivacyPolicy() {
         <p className="text-sm font-[inter] font-light">
           If you have any questions or concerns regarding this Privacy Policy or your personal information, please
           contact us at{" "}
-          <a href="mailto:info@wectrlaltdlt.com" className="text-primary hover:underline">
+          <a href="mailto:info@wectrlaltdlt.com" className="textWhite underline">
             info@wectrlaltdlt.com
           </a>
           .
