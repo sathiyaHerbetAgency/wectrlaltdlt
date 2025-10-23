@@ -8,8 +8,8 @@ export default function TicketPricing() {
       src: "/images/tickets/ticket-1.webp",
       alt: "General Admission card",
       ctas: [
-        { href: "#ticketmelon", label: "Purchase via Ticketmelon", color:'#0101FA', border:'#0101FA', size:"grow-1", textColor:'#fff', status:"comingsoon",},
-        // { href: "#tixr", label: "Purchase via Tixr", color:'#000', border:'#0101FA', size:"gro-1 w-2/5", textColor:'#fff', status:"comingsoon", },
+        { href: "https://www.ticketmelon.com/cadevents/ctrlaltdlt/", label: "Purchase via Ticketmelon", color:'#0101FA', border:'#0101FA', size:"grow-1 w-2/5", textColor:'#fff', status:"buy",},
+        { href: "http://ctrlaltdlt.tixr.com/countdown2025", label: "Purchase via Tixr", color:'#000', border:'#0101FA', size:"grow-1 w-2/5", textColor:'#fff', status:"buy", },
       ],
     },
     // {
@@ -23,8 +23,8 @@ export default function TicketPricing() {
       src: "/images/tickets/ticket-3.webp",
       alt: "Stage Pass card",
       ctas: [
-        { href: "#ticketmelon", label: "Purchase via Ticketmelon", color:'#7000FF', border:'#0101FA', size:"grow-1" , textColor:'#fff', status:"comingsoon", },
-        // { href: "#tixr", label: "Purchase via Tixr", color:'#000', border:'#7000FF', size:"grow-1", textColor:'#fff', status:"comingsoon", },
+        { href: "https://www.ticketmelon.com/cadevents/ctrlaltdlt/", label: "Purchase via Ticketmelon", color:'#7000FF', border:'#0101FA', size:"grow-1 w-2/5" , textColor:'#fff', status:"buy", },
+        { href: "http://ctrlaltdlt.tixr.com/countdown2025", label: "Purchase via Tixr", color:'#000', border:'#7000FF', size:"grow-1 w-2/5", textColor:'#fff', status:"buy", },
       ],
     },
   ]
@@ -70,7 +70,7 @@ export default function TicketPricing() {
                       <span>Tickets on sale will be on 23rd Oct, 12pm </span>
                     ) : (
                       // ✅ clickable version
-                      <Link href={cta.href}>{cta.label}</Link>
+                      <Link target="_blank" href={cta.href}>{cta.label}</Link>
                     )}
                   </Button>
                   
