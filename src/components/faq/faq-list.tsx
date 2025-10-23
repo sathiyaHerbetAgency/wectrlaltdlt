@@ -9,7 +9,7 @@ const ticketing: FaqItem[] = [
     a: (
        <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white ">
         <div>
-          <div className="font-normal">Tickets are available via  <a className="hover:underline" href="https://www.ticketmelon.com/cadevents/Wectrlaltdlt/" target="blank">Ticket Melon</a> and <a className="hover:underline" href="https://www.ticketmelon.com/cadevents/Wectrlaltdlt/" target="blank">Tixer</a> </div>
+          <div className="font-normal">Tickets are available via  <a className="hover:underline" href="https://www.ticketmelon.com/cadevents/Wectrlaltdlt/" target="blank">Ticket Melon</a> and <a className="hover:underline" href="https://www.ticketmelon.com/cadevents/Wectrlaltdlt/" target="blank">Tixer.</a> </div>
         </div>
         </div>
     ),
@@ -19,7 +19,7 @@ const ticketing: FaqItem[] = [
     a: (
       <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white ">
         <div>
-          <div className="font-normal">GENERAL ADMISSION</div>
+          <div className="font-normal">General Admission</div>
           <div>RM188.00 onwards</div>
         </div>
         <div>
@@ -52,7 +52,7 @@ const ticketing: FaqItem[] = [
        <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white">
        
           <div className="font-normal">
-            <p> If you receive an error message while making a purchase, kindly email us at info@wectrlaltdlt.com </p>
+            <p> If you receive an error message while making a purchase, kindly email us at info@wectrlaltdlt.com. </p>
        
         </div>  
         </div>
@@ -66,7 +66,13 @@ const ticketing: FaqItem[] = [
   },
   {
     q: "Am I required to create an account for my selected ticketing platform (Ticketmelon or Tixr) to purchase tickets?",
-    a: "Yes, in order to purchase tickets, you are required to register an account for the selected platform."
+    a: (
+       <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white ">
+        <div>
+          <div className="font-normal">Yes, in order to purchase tickets, you are required to register an account with either  <a className="text-white underline" href="http://www.ticketmelon.com" target="blank">http://www.ticketmelon.com</a> or <a className="underline" href="http://www.tixr.com" target="blank">http://www.tixr.com.</a> </div>
+        </div>
+        </div>
+    ),
   },
 ]
 const eventDetails: FaqItem[] = [
