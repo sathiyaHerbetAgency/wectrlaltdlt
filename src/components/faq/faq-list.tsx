@@ -29,7 +29,7 @@ const ticketing: FaqItem[] = [
         <p className="italic">*Ticket prices exclude ticketing fees and booking charges.</p>
         <div>
           <div className="font-normal"> Premium Stage Experience (VVIP Sofa)</div>
-          <div>Reserve your spot at info@ctrlaltdlt.com</div>
+          <div>Reserve your spot at info@ctrlaltdlt.com.</div>
         </div>
       </div>
     ),
@@ -49,7 +49,7 @@ const ticketing: FaqItem[] = [
   {
     q: "What should I do if I receive an error message?",
     a: (
-       <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white text-white">
+       <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white">
        
           <div className="font-normal">
             <p> If you receive an error message while making a purchase, kindly email us at info@wectrlaltdlt.com </p>
@@ -73,7 +73,7 @@ const eventDetails: FaqItem[] = [
   {
     q: "What are the event details?",
   a: (
-        <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white text-white">
+        <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white ">
           <div className="font-normal">Name: CTRL ALT DLT 2025 </div>
           <div>Date: 31st December 2025 (Wednesday) </div>
           <div>Location: Sepang International Circuit</div>
