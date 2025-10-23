@@ -8,7 +8,7 @@ export default function VVIP() {
     <section className=" text-foreground pb-16">
       <div className="mx-auto max-w-6xl px-6 py-4 md:py-6">
         <header className="text-center flex justify-center mb-6">
-          <img src="/images/VVIP/VVIPText.webp" className="min-w-sm px-3 md:w-md md:pb-3 md:hidden" alt="Event Layout Map" />
+          <img src="/images/VVIP/VVIPText.webp" className="min-w-sm max-w-sm px-3 md:w-md md:pb-3 md:hidden" alt="Event Layout Map" />
           <img src="/images/VVIP/VVIPTextDesktop.png" className="md:min-w-lg md:max-w-3xl md:pb-3 hidden md:block" alt="Event Layout Map" />
         </header>
 

@@ -34,7 +34,7 @@ export default function TicketPricing() {
       <div className="mx-auto max-w-6xl px-6 py-16 flex flex-col">
         <div className="md:mx-auto md:max-w-7xl md:px-4">
           <div className="flex flex-col ">
-            <img src="/images/tickets/ticket-text.png" alt="FAQ banner"    className="min-w-sm md:mx-auto self-center   md:min-w-md pb-3" />
+            <img src="/images/tickets/ticket-text.png" alt="FAQ banner"    className="min-w-xs max-w-xs md:mx-auto self-center   md:min-w-md md:max-w-md pb-3" />
           </div>
         </div>
 
