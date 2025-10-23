@@ -7,7 +7,7 @@ const ticketing: FaqItem[] = [
   {
     q: "How can I buy tickets to CTRL ALT DLT 2025?",
     a: (
-       <div className="space-y-3 text-sm/6 md:text-[16px] font-[inter] text-white">
+       <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white ">
         <div>
           <div className="font-normal">Tickets are available via  <a className="hover:underline" href="https://www.ticketmelon.com/cadevents/Wectrlaltdlt/" target="blank">Ticket Melon</a> and <a className="hover:underline" href="https://www.ticketmelon.com/cadevents/Wectrlaltdlt/" target="blank">Tixer</a> </div>
         </div>
@@ -17,7 +17,7 @@ const ticketing: FaqItem[] = [
   {
     q: "What are the ticket categories?",
     a: (
-      <div className="space-y-3 text-sm/6 md:text-[16px] font-[inter] text-white">
+      <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white ">
         <div>
           <div className="font-normal">GENERAL ADMISSION</div>
           <div>RM188.00 onwards</div>
@@ -40,7 +40,7 @@ const ticketing: FaqItem[] = [
   },
   {
     q: "What are the accepted payment methods?",
-    a: "We accept card payments (Credit & Debit) and FPX Online Banking. Buy Now Pay Later payment methods are also available via Atome, PayLater by Grab and SpayLater (via Ticketmelon)",
+    a: "We accept card payments (Credit & Debit) and FPX Online Banking. Buy Now Pay Later payment methods are also available via Atome, PayLater by Grab and SpayLater (via Ticketmelon).",
   },
    {
     q: "Will I receive any confirmation for my purchase?",
@@ -49,7 +49,7 @@ const ticketing: FaqItem[] = [
   {
     q: "What should I do if I receive an error message?",
     a: (
-       <div className="space-y-3 text-sm/6 md:text-[16px] font-[inter] text-white">
+       <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white text-white">
        
           <div className="font-normal">
             <p> If you receive an error message while making a purchase, kindly email us at info@wectrlaltdlt.com </p>
@@ -73,7 +73,7 @@ const eventDetails: FaqItem[] = [
   {
     q: "What are the event details?",
   a: (
-        <div className="space-y-3 text-sm/6 md:text-[16px] font-[inter] text-white">
+        <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white text-white">
           <div className="font-normal">Name: CTRL ALT DLT 2025 </div>
           <div>Date: 31st December 2025 (Wednesday) </div>
           <div>Location: Sepang International Circuit</div>
@@ -94,7 +94,7 @@ const eventDetails: FaqItem[] = [
   },
   {
     q: "What is the lineup and timetable?",
-    a: "Exact lineup and timetable will be announced closer to the event. For more info, stay tuned on our social media platforms at @wectrlaltdlt",
+    a: "Exact lineup and timetable will be announced closer to the event. For more info, stay tuned on our social media platforms at @wectrlaltdlt.",
   },
   
 ]
@@ -103,7 +103,7 @@ const venueInfo: FaqItem[] = [
   {
     q: "What items are not allowed in the venue?",
     a: (
-      <div className="space-y-3 text-sm/6 md:text-[16px] font-[inter] text-white">
+      <div className="space-y-3 text-sm/6 md:text-[14px] font-[inter] text-white text-white">
         <div>
           <div className="font-normal">Prohibited items include: all type of cameras (except for phone camera), audio/video recording equipment, large bags, weapons, outside food/drinks, etc. Full list will be published closer to the event date.</div>
         </div>
@@ -160,7 +160,7 @@ export default function FaqList() {
               <AccordionTrigger className="rounded-xl px-4 md:px-5 py-4 md:py-5 text-white font-[inter]">
                 <span className="text-sm md:text-base font-[inter] font-semibold">{item.q}</span>
               </AccordionTrigger>
-              <AccordionContent className="px-4 md:px-5 pb-4 md:pb-5 text-white">{item.a}</AccordionContent>
+              <AccordionContent className="px-4 md:px-5 pb-4 md:pb-5 font-normal text-white"><div className="text-sm/6 md:text-[14px] font-[inter] text-white text-white"> {item.a}</div></AccordionContent>
             </AccordionItem>
             </div>
           ))}

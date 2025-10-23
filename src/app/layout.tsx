@@ -91,6 +91,17 @@ export default function RootLayout({
         )}
         <Suspense fallback={null}>
           <GtmRouteListener />
+          {/* <>
+    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property='og:title' content='WE CTRL ALT DLT'/>
+    <meta property='og:image' content='/social/og-1200x630.jpg'/>
+    <meta property='og:description' content="Join CTRL + ALT + DLT — New Year’s Eve 2025 at Sepang International Circuit. Reset your reality with immersive visuals, top-tier DJs and a full night of electronic chaos. Take control. Live the alternate. Delete the rest." />
+    <meta property='og:url' content='www.pinkfishfestival.com'/>
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <link rel="icon" href="/fav_icon.png" />
+  </> */}
         </Suspense>
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />
