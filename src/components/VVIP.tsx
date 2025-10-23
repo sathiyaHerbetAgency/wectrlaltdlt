@@ -5,13 +5,11 @@ export default function VVIP() {
  
 
   return (
-    <section className=" text-foreground py-12">
+    <section className=" text-foreground pb-16">
       <div className="mx-auto max-w-6xl px-6 py-4 md:py-6">
         <header className="text-center flex justify-center mb-6">
-                   <img src="/images/VVIP/VVIPText.webp" className="w-xs md:w-md md:pb-3 md:hidden" alt="Event Layout Map" />
-                   <img src="/images/VVIP/VVIPTextDesktop.png" className="w-xs md:w-4xl md:pb-3 hidden md:block" alt="Event Layout Map" />
-
-
+          <img src="/images/VVIP/VVIPText.webp" className="min-w-sm px-3 md:w-md md:pb-3 md:hidden" alt="Event Layout Map" />
+          <img src="/images/VVIP/VVIPTextDesktop.png" className="md:min-w-lg md:max-w-5xl md:pb-3 hidden md:block" alt="Event Layout Map" />
         </header>
 
         {/* Cards: mobile stacks one-by-one; desktop shows three columns */}
@@ -37,7 +35,7 @@ export default function VVIP() {
         </div>
         <div className="mx-auto max-w-7xl px-4">
           <div className="flex justify-center pt-4">
-            <img src="/images/VVIP/Logoline_CAD.png" alt="Logo Line"    className="object-contain   md:w-xl" />
+            <img src="/images/VVIP/Logoline_CAD.png" alt="Logo Line"    className="object-contain   md:max-w-4xl" />
           </div>
         </div>
       </div>

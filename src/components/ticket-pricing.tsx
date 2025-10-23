@@ -30,11 +30,11 @@ export default function TicketPricing() {
   ]
 
   return (
-    <section id="tickets" className=" text-foreground">
+    <section id="tickets" className=" text-foreground pb-16">
       <div className="mx-auto max-w-6xl px-6 py-16 flex flex-col">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="flex justify-center">
-            <img src="/images/tickets/ticket-text.png" alt="FAQ banner"    className="object-contain w-lg pb-3" />
+        <div className="md:mx-auto md:max-w-7xl md:px-4">
+          <div className="flex flex-col ">
+            <img src="/images/tickets/ticket-text.png" alt="FAQ banner"    className="min-w-sm md:mx-auto self-center   md:min-w-lg pb-3" />
           </div>
         </div>
 
@@ -90,7 +90,7 @@ export default function TicketPricing() {
           <p className="text-center uppercase text-sm text-[#fff] font-bold font-[Rajdhani]">Buy now pay later (via TicketMelon)</p>  
           <div className="flex items-center gap-3">
             <img src="/images/tickets/payment-image-1.png" alt="FAQ banner"    className=" w-[25px] h-[25px]" />
-            <img src="/images/tickets/payment-image-3.png" alt="FAQ banner"    className="w-[50px] h-[30px] " />
+            <img src="/images/tickets/payment-image-3.png" alt="FAQ banner"    className="w-[60px] h-[30px] " />
             <img src="/images/tickets/payment-image-2.png" alt="FAQ banner"    className="w-[40px] h-[35px] " />
 
           </div>   

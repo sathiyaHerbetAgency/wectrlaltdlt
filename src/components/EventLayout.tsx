@@ -5,10 +5,10 @@ export default function EventLayout() {
  
 
   return (
-    <section id="layout" className=" text-foreground">
-      <div className="mx-auto max-w-6xl px-6 py-4 md:py-4">
+    <section id="layout" className=" text-foreground pb-16">
+      <div className="mx-auto max-w-6xl px-6 ">
         <header className="text-center flex justify-center mb-6">
-                   <img src="/images/Event/EventText.webp" className="w-md pb-3" alt="Event Layout Map" />
+                   <img src="/images/Event/EventText.webp" className=" min-w-sm px-3 md:min-w-lg md:max-w-lg pb-3" alt="Event Layout Map" />
 
         </header>
 

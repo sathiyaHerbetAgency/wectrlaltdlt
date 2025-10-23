@@ -146,7 +146,7 @@ const venueInfo: FaqItem[] = [
 export default function FaqList() {
   return (
     <section className="bg-faq-content">
-      <div className="mx-auto max-w-5xl px-4 py-8 md:py-12">
+      <div className="mx-auto max-w-5xl md:max-w-6xl px-4 py-8 md:py-12">
         <p className="mb-4 text-xs md:text-sm font-medium font-[inter] text-white">Ticketing & Registration</p>
 
         <Accordion type="multiple" className="space-y-4">
@@ -167,7 +167,7 @@ export default function FaqList() {
         </Accordion>
                <p className="italic text-[10px] md:text-[12px] font-normal font-[inter] text-white mt-3">*Other ticketing terms and conditions may apply. </p>
       </div>
-       <div className="mx-auto max-w-5xl px-4 py-8 md:py-12">
+       <div className="mx-auto max-w-5xl md:max-w-6xl px-4 py-8 md:py-12">
         <p className=" text-xs md:text-sm font-medium font-[inter] text-white mb-4">Event Details </p>
 
 
@@ -188,7 +188,7 @@ export default function FaqList() {
           ))}
         </Accordion>
       </div>
-      <div className="mx-auto max-w-5xl px-4 py-8 md:py-12">
+      <div className="mx-auto max-w-5xl md:max-w-6xl px-4 py-8 md:py-12">
         <p className=" text-xs md:text-sm font-medium font-[inter] text-white">Venue & Entry Info</p>
         <p className=" text-xs md:text-sm italic pt-3 font-[inter] text-white">Stay tuned! Details will be announced closer to the event </p>
 

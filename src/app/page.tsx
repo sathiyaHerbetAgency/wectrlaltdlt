@@ -16,9 +16,9 @@ export default function Page() {
       <Hero />
       <TextContainer />
       <section id="lineup" className="w-full bg-black bg-lineup py-16">
-        <div className="mx-auto max-w-7xl px-4">
-          <div className="flex justify-center">
-            <img src="/images/lineup/lineup-text.webp" alt="FAQ banner"    className="object-contain max-w-xs md:w-lg" />
+        <div className="md:mx-auto md:max-w-7xl md:px-4">
+          <div className="flex md:justify-center flex-col md:flex-row ">
+            <img src="/images/lineup/lineup-text.webp" alt="FAQ banner"    className="self-center pl-5 px-2 min-w-sm md:min-w-lg md:max-w-2xl" />
           </div>
         </div>
         <LineupSlider className="w-full pt-8" />

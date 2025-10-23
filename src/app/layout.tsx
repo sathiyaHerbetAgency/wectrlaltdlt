@@ -31,12 +31,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "WE CTRL ALT DLT",
-    description: "WECTRLALTDLT",
-    url: "https://your-domain.com",       // replace with your actual domain
+    description: "Join CTRL + ALT + DLT — New Year’s Eve 2025 at Sepang International Circuit. Reset your reality with immersive visuals, top-tier DJs and a full night of electronic chaos. Take control. Live the alternate. Delete the rest.",
+    url: "https://wectrlaltdlt.com/",       // replace with your actual domain
     siteName: "WE CTRL ALT DLT",
     images: [
       {
-        url: "/og-image.png",            // 🟠 This is your social preview image
+        url: "/mob-logo.png",            // 🟠 This is your social preview image
         width: 1200,
         height: 630,
         alt: "WE CTRL ALT DLT Preview",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "WE CTRL ALT DLT",
     description: "WECTRLALTDLT",
-    images: ["/og-image.png"],           // 🟠 Same image can be reused
+    images: ["/mob-logo.png"],           // 🟠 Same image can be reused
   },
 };
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-######"; 
