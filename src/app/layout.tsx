@@ -21,26 +21,29 @@ const rajdhani = Rajdhani({
   weight: ["300", "400", "500", "600", "700"],
 })
 export const metadata: Metadata = {
+  metadataBase: new URL("https://wectrlaltdlt.com"), // ✅ so relative URLs resolve to absolute
   title: "WE CTRL ALT DLT",
-  description: "WECTRLALTDLT",
+  description:
+    "Join CTRL + ALT + DLT — New Year’s Eve 2025 at Sepang International Circuit. Reset your reality with immersive visuals, top-tier DJs and a full night of electronic chaos. Take control. Live the alternate. Delete the rest.",
   generator: "WECTRLALTDLT",
   icons: {
-    icon: "/favicon.ico",                  // 🟠 Browser tab icon
-    shortcut: "/site-icon.jpg",        // 🟠 Optional
-    apple: "/apple-touch-icon.png",        // 🟠 For iOS home screen
+    icon: "/favicon.ico",
+    shortcut: "/site-icon.jpg",
+    apple: "/apple-touch-icon.png",
   },
   openGraph: {
     title: "WE CTRL ALT DLT",
-    description: "Join CTRL + ALT + DLT — New Year’s Eve 2025 at Sepang International Circuit. Reset your reality with immersive visuals, top-tier DJs and a full night of electronic chaos. Take control. Live the alternate. Delete the rest.",
-    url: "https://wectrlaltdlt.com/",       // replace with your actual domain
+    description:
+      "Join CTRL + ALT + DLT — New Year’s Eve 2025 at Sepang International Circuit. Reset your reality with immersive visuals, top-tier DJs and a full night of electronic chaos. Take control. Live the alternate. Delete the rest.",
+    url: "https://wectrlaltdlt.com/",
     siteName: "WE CTRL ALT DLT",
     images: [
       {
-        url: "/mob-logo.png",            // 🟠 This is your social preview image
+        url: "https://wectrlaltdlt.com/social/og-1200x630.jpg", // ✅ absolute, JPG, no transparency
         width: 1200,
         height: 630,
         alt: "WE CTRL ALT DLT Preview",
-         type: "image/png",
+        type: "image/jpeg",
       },
     ],
     locale: "en_US",
@@ -49,8 +52,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "WE CTRL ALT DLT",
-    description: "WECTRLALTDLT",
-    images: ["/mob-logo.png"],           // 🟠 Same image can be reused
+    description:
+      "Join CTRL + ALT + DLT — New Year’s Eve 2025 at Sepang International Circuit.",
+    images: ["https://wectrlaltdlt.com/social/og-1200x630.jpg"], // ✅ absolute
   },
 };
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-######"; 
@@ -73,7 +77,6 @@ export default function RootLayout({
             `}
           </script>
         )}
-         <meta property='og:image' content='/mob-logo.png'/>
       </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}  suppressHydrationWarning >
           {GTM_ID && (
