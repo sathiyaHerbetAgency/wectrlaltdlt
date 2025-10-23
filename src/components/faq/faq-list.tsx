@@ -90,7 +90,7 @@ const eventDetails: FaqItem[] = [
   },
    {
     q: "Will the festival be cancelled if it rains?",
-    a: "Unless by advised by officials, the festival will continue as usual even if a less than ideal weather condition is present.",
+    a: "*Unless advised by officials, the festival will continue as usual even in less than ideal weather conditions.",
   },
   {
     q: "What is the lineup and timetable?",
