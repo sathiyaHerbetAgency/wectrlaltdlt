@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "WE CTRL ALT DLT",
     images: [
       {
-        url: "/mob-logo.png",            // 🟠 This is your social preview image
+        url: "https://wectrlaltdlt.com/images/mob-logo.png",            // 🟠 This is your social preview image
         width: 1200,
         height: 630,
         alt: "WE CTRL ALT DLT Preview",
