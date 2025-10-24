@@ -28,7 +28,6 @@ export default function TicketPricing() {
       ],
     },
   ]
-
   return (
     <section id="tickets" className=" text-foreground pb-16">
       <div className="mx-auto max-w-6xl px-6 py-16 flex flex-col">
