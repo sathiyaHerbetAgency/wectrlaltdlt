@@ -36,7 +36,6 @@ export default function TicketPricing() {
             <img src="/images/tickets/ticket-text.png" alt="FAQ banner"    className="min-w-xs max-w-xs md:mx-auto self-center   md:min-w-md md:max-w-md pb-3" />
           </div>
         </div>
-
         {/* Cards: mobile stacks one-by-one; desktop shows three columns */}
         <div className="mt-10 flex flex-col gap-6 md:flex-row justify-center w-auto">
           {cards.map((card) => (
