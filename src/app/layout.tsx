@@ -57,6 +57,7 @@ export const metadata: Metadata = {
     images: ["https://wectrlaltdlt.com/social/og-1200x630.jpg"], // ✅ absolute
   },
 };
+
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-######"; 
 export default function RootLayout({
   children,
