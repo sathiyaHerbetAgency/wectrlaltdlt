@@ -65,7 +65,6 @@ export function SiteFooter() {
             <Logo />
 
           </div>
-
           {/* Navigation */}
           <nav aria-label="Footer" className="space-y-2 md:space-y-4">
             {navLinks.map((l) => (
