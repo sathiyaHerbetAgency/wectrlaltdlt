@@ -9,7 +9,7 @@ export default function TicketPricing() {
       alt: "General Admission card",
       ctas: [
         { href: "https://www.ticketmelon.com/cadevents/ctrlaltdlt/", label: "Purchase via Ticketmelon", color:'#0101FA', border:'#0101FA', size:"grow-1 w-2/5", textColor:'#fff', status:"buy",},
-        { href: "http://ctrlaltdlt.tixr.com/countdown2025", label: "Purchase via Tixr", color:'#000', border:'#0101FA', size:"grow-1 w-2/5", textColor:'#fff', status:"buy", },
+        { href: "http://ctrlaltdlt.tixr.com/countdown2025", label: "Purchase via Tixr", color:'#0101FA', border:'#0101FA', size:"grow-1 w-2/5", textColor:'#fff', status:"buy", },
       ],
     },
     // {
@@ -23,8 +23,8 @@ export default function TicketPricing() {
       src: "/images/tickets/ticket-3.webp",
       alt: "Stage Pass card",
       ctas: [
-        { href: "https://www.ticketmelon.com/cadevents/ctrlaltdlt/", label: "Purchase via Ticketmelon", color:'#7000FF', border:'#0101FA', size:"grow-1 w-2/5" , textColor:'#fff', status:"buy", },
-        { href: "http://ctrlaltdlt.tixr.com/countdown2025", label: "Purchase via Tixr", color:'#000', border:'#7000FF', size:"grow-1 w-2/5", textColor:'#fff', status:"buy", },
+        { href: "https://www.ticketmelon.com/cadevents/ctrlaltdlt/", label: "Purchase via Ticketmelon", color:'#7000FF', border:'#7000FF', size:"grow-1 w-2/5" , textColor:'#fff', status:"buy", },
+        { href: "http://ctrlaltdlt.tixr.com/countdown2025", label: "Purchase via Tixr", color:'#7000FF', border:'#7000FF', size:"grow-1 w-2/5", textColor:'#fff', status:"buy", },
       ],
     },
   ]
